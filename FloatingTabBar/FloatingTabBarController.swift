@@ -20,8 +20,8 @@ class FloatingTabBarController : UITabBarController {
     private func setupTabBar() {
         tabBar.backgroundImage = UIImage() // remove the default background
         tabBar.shadowImage = UIImage()     // remove the line
-        tabBar.tintColor = UIColor(named: "tabbar_color_selected")
-        tabBar.unselectedItemTintColor = UIColor(named: "tabbar_color_unselected")
+        tabBar.tintColor = UIColor(named: "primary_text_color")
+        tabBar.unselectedItemTintColor = UIColor(named: "secondary_text_color")
 
         let blurEffect = UIBlurEffect(style: .light)
         let effectView = UIVisualEffectView(effect: blurEffect)

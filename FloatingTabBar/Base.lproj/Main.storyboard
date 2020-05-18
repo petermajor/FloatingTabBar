@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,7 +67,7 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tuu-bq-Krb">
                                             <rect key="frame" x="10" y="13" width="24" height="22"/>
-                                            <color key="tintColor" name="searchbar_icon"/>
+                                            <color key="tintColor" name="primary_text_color"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Tuu-bq-Krb" secondAttribute="height" multiplier="1:1" id="gWJ-oH-93a"/>
                                                 <constraint firstAttribute="width" constant="24" id="p0k-LJ-IC2"/>
@@ -75,7 +76,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dys-6K-Tud">
                                             <rect key="frame" x="44" y="15" width="320" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" name="searchbar_text"/>
+                                            <color key="textColor" name="secondary_text_color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -99,40 +100,40 @@
                                         <rect key="frame" x="0.0" y="0.0" width="93" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Recently">
-                                            <color key="titleColor" name="tabbar_color_unselected"/>
+                                            <color key="titleColor" name="secondary_text_color"/>
                                         </state>
                                         <state key="selected">
-                                            <color key="titleColor" name="tabbar_color_selected"/>
+                                            <color key="titleColor" name="primary_text_color"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrd-Yg-npk">
                                         <rect key="frame" x="93" y="0.0" width="102.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Top week">
-                                            <color key="titleColor" name="tabbar_color_unselected"/>
+                                            <color key="titleColor" name="secondary_text_color"/>
                                         </state>
                                         <state key="selected">
-                                            <color key="titleColor" name="tabbar_color_selected"/>
+                                            <color key="titleColor" name="primary_text_color"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byS-TS-s5s">
                                         <rect key="frame" x="195.5" y="0.0" width="82.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Popular">
-                                            <color key="titleColor" name="tabbar_color_unselected"/>
+                                            <color key="titleColor" name="secondary_text_color"/>
                                         </state>
                                         <state key="selected">
-                                            <color key="titleColor" name="tabbar_color_selected"/>
+                                            <color key="titleColor" name="primary_text_color"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-CE-ejF">
                                         <rect key="frame" x="278" y="0.0" width="96" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Featured">
-                                            <color key="titleColor" name="tabbar_color_unselected"/>
+                                            <color key="titleColor" name="secondary_text_color"/>
                                         </state>
                                         <state key="selected">
-                                            <color key="titleColor" name="tabbar_color_selected"/>
+                                            <color key="titleColor" name="primary_text_color"/>
                                         </state>
                                     </button>
                                 </subviews>
@@ -140,6 +141,29 @@
                                     <constraint firstAttribute="height" constant="24" id="t8d-n1-5T0"/>
                                 </constraints>
                             </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-9Y-LOz">
+                                <rect key="frame" x="0.0" y="216" width="414" height="244"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="244" id="SSS-XD-Pdk"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qnn-Ut-ZIr">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tH6-lI-Cf3">
+                                        <rect key="frame" x="20" y="58" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="H6Q-qU-51m">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backdrop_the_crown" translatesAutoresizingMaskIntoConstraints="NO" id="ice-pg-fkp">
                                 <rect key="frame" x="0.0" y="663" width="414" height="233"/>
                                 <constraints>
@@ -150,6 +174,8 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ice-pg-fkp" secondAttribute="bottom" id="2X9-ca-PoA"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="fRW-9Y-LOz" secondAttribute="trailing" id="3Wn-TP-1WS"/>
+                            <constraint firstItem="fRW-9Y-LOz" firstAttribute="top" secondItem="Xvd-2R-ofV" secondAttribute="bottom" constant="12" id="4CH-un-dJu"/>
                             <constraint firstItem="Xvd-2R-ofV" firstAttribute="top" secondItem="dwZ-Vx-BGv" secondAttribute="bottom" constant="20" id="4c6-Sb-JJO"/>
                             <constraint firstItem="dwZ-Vx-BGv" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="4x9-ph-krj"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="dwZ-Vx-BGv" secondAttribute="trailing" constant="20" id="89y-nr-C2b"/>
@@ -160,6 +186,7 @@
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Akb-fV-SF3" secondAttribute="trailing" constant="20" id="gBz-9C-XWc"/>
                             <constraint firstItem="RGl-11-u6Y" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="lF8-xE-ee6"/>
                             <constraint firstItem="ice-pg-fkp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="p8O-j5-VUN"/>
+                            <constraint firstItem="fRW-9Y-LOz" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="qhk-Gd-bW3"/>
                             <constraint firstItem="Akb-fV-SF3" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="qvO-EM-9Kv"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Xvd-2R-ofV" secondAttribute="trailing" constant="20" id="tI1-SR-a80"/>
                             <constraint firstItem="dwZ-Vx-BGv" firstAttribute="top" secondItem="Akb-fV-SF3" secondAttribute="bottom" constant="20" id="w0I-nl-PFJ"/>
@@ -171,6 +198,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="backgroundGradient" destination="RGl-11-u6Y" id="EmU-or-Y7c"/>
+                        <outlet property="movieCollectionView" destination="fRW-9Y-LOz" id="OAS-PH-CO4"/>
                         <outlet property="profileImageView" destination="pka-sJ-0gQ" id="kNj-de-f99"/>
                         <outlet property="searchBar" destination="dwZ-Vx-BGv" id="NlI-Sg-mTv"/>
                     </connections>
@@ -251,17 +279,11 @@
         <namedColor name="navbar_tint">
             <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="searchbar_icon">
-            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="primary_text_color">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="searchbar_text">
-            <color red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="tabbar_color_selected">
-            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="tabbar_color_unselected">
-            <color red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="secondary_text_color">
+            <color red="0.66299998760223389" green="0.66299998760223389" blue="0.66299998760223389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

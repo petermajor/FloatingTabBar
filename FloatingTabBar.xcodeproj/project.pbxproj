@@ -15,6 +15,8 @@
 		61B10518246FE2B600CA01D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B10516246FE2B600CA01D9 /* LaunchScreen.storyboard */; };
 		61B10520246FE36C00CA01D9 /* FloatingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1051F246FE36C00CA01D9 /* FloatingTabBarController.swift */; };
 		61B1052224712D1000CA01D9 /* BackgroundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1052124712D1000CA01D9 /* BackgroundGradientView.swift */; };
+		61D32DD3247327FD00B55308 /* HomeMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D32DD1247327FD00B55308 /* HomeMovieCell.swift */; };
+		61D32DD4247327FD00B55308 /* HomeMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D32DD2247327FD00B55308 /* HomeMovieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		61B10519246FE2B600CA01D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61B1051F246FE36C00CA01D9 /* FloatingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBarController.swift; sourceTree = "<group>"; };
 		61B1052124712D1000CA01D9 /* BackgroundGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradientView.swift; sourceTree = "<group>"; };
+		61D32DD1247327FD00B55308 /* HomeMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieCell.swift; sourceTree = "<group>"; };
+		61D32DD2247327FD00B55308 /* HomeMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMovieCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				61B10514246FE2B600CA01D9 /* Assets.xcassets */,
 				61B1052124712D1000CA01D9 /* BackgroundGradientView.swift */,
 				61B1051F246FE36C00CA01D9 /* FloatingTabBarController.swift */,
+				61D32DD1247327FD00B55308 /* HomeMovieCell.swift */,
+				61D32DD2247327FD00B55308 /* HomeMovieCell.xib */,
 				61B1050D246FE2B400CA01D9 /* HomeViewController.swift */,
 				61B10519246FE2B600CA01D9 /* Info.plist */,
 				61B10516246FE2B600CA01D9 /* LaunchScreen.storyboard */,
@@ -134,6 +140,7 @@
 				61B10518246FE2B600CA01D9 /* LaunchScreen.storyboard in Resources */,
 				61B10515246FE2B600CA01D9 /* Assets.xcassets in Resources */,
 				61B10513246FE2B400CA01D9 /* Main.storyboard in Resources */,
+				61D32DD4247327FD00B55308 /* HomeMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B1050E246FE2B400CA01D9 /* HomeViewController.swift in Sources */,
+				61D32DD3247327FD00B55308 /* HomeMovieCell.swift in Sources */,
 				61B10520246FE36C00CA01D9 /* FloatingTabBarController.swift in Sources */,
 				61B1050A246FE2B400CA01D9 /* AppDelegate.swift in Sources */,
 				61B1052224712D1000CA01D9 /* BackgroundGradientView.swift in Sources */,
@@ -293,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WL4P87GF5;
 				INFOPLIST_FILE = FloatingTabBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WL4P87GF5;
 				INFOPLIST_FILE = FloatingTabBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
