@@ -1,11 +1,3 @@
-//
-//  HomeMovieCell.swift
-//  FloatingTabBar
-//
-//  Created by Peter Major on 18/05/2020.
-//  Copyright © 2020 majormojo.co.uk Limited. All rights reserved.
-//
-
 import UIKit
 
 class HomeMovieCell: UICollectionViewCell {
